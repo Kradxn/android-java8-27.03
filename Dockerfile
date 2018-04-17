@@ -6,6 +6,7 @@ ENV ANDROID_SDK_TOOLS="24.4.1"
 
 ENV	PATH="${PATH}:${PWD}/android-sdk-linux/platform-tools/"
 ENV	ANDROID_HOME="${PWD}/android-sdk-linux"
+ENV ANDROID_SDK_ROOT="${PWD}/android-sdk-linux"
  
 RUN apt-get --quiet update --yes  && \
    apt-get --quiet install --yes wget tar unzip lib32stdc++6 lib32z1 && \
